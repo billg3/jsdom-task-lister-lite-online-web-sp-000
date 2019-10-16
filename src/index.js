@@ -2,9 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   document.addEventListener('submit', (event) => {
-
+//
       event.preventDefault()
-
+//
+ const taskList = new TaskList();
+ 
 //create
     ul = document.querySelector('#tasks')
     li = document.createElement('li');
