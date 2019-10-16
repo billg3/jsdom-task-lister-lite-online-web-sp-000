@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault()
 //
  const taskList = new TaskList();
-   const taskUl = document.getElementById("tasks");
+   
 //create
     ul = document.querySelector('#tasks')
     li = document.createElement('li');
@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ul.appendChild(li);
 //
     document.querySelector('#create-task-form').reset();
+//
 
-
-      taskUl.addEventListener("click", (e) => {
+      ul.addEventListener("click", (e) => {
         if (e.target.nodeName === "BUTTON") {
           taskList.deleteTask(e.target.dataset.description);
           renderApp();
