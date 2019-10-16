@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('#create-task-form').reset();
 
 
+      taskUl.addEventListener("click", (e) => {
+        if (e.target.nodeName === "BUTTON") {
+          taskList.deleteTask(e.target.dataset.description);
+          renderApp();
+        }
+      });
 
 
 
