@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault()
 //
  const taskList = new TaskList();
- 
+   const taskUl = document.getElementById("tasks");
 //create
     ul = document.querySelector('#tasks')
     li = document.createElement('li');
