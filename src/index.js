@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     taskInput = document.querySelector('#new-task-description').value
 //
     li.textContent = taskInput;
-    abc = ul.appendChild(li);
+   ul.appendChild(li);
 //
     document.querySelector('#create-task-form').reset();
 //
