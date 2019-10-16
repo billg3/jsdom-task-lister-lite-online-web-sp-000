@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       event.preventDefault()
 
-
-
+//create
 
     ul = document.querySelector('#tasks')
 
